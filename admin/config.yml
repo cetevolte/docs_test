@@ -1,40 +1,16 @@
 backend:
-  name: github
-  repo: cetevolte/docs_test
+  name: git-gateway
   branch: main
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "documentazione"
+  - name: "docs"
     label: "Documentazione"
-    folder: ""
-    create: false
     files:
       - name: "benvenuto"
         label: "Benvenuto"
         file: "benvenuto.md"
-        fields:
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-
-      - name: "guide"
-        label: "Guide"
-        folder: "guide"
-        create: true
-        fields:
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-
-      - name: "cartella"
-        label: "Cartella"
-        folder: "cartella"
-        create: true
-        fields:
-          - { label: "Contenuto", name: "body", widget: "markdown" }
-
-      - name: "appendix"
-        label: "Appendix"
-        folder: "appendix"
-        create: true
         fields:
           - { label: "Contenuto", name: "body", widget: "markdown" }
