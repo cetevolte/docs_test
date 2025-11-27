@@ -1,18 +1,21 @@
 ---
-title: "Installazione"
-description: "Guida rapida all’installazione"
+title: Installazione
+description: Guida rapida all’installazione
 ---
-
 # 🚀 Installazione
 
 Questa guida spiega i passi minimi per iniziare.
 
+**~~Questa riga è stata modificata da Decap CMS in locale.~~**
+
+![]()
+
 ## Requisiti
 
-- Git installato  
-- Node.js (>= 18)  
-- Browser moderno  
-- Repo GitHub attivo
+* Git installato  
+* Node.js (>= 18)  
+* Browser moderno  
+* Repo GitHub attivo
 
 ## Procedura
 
@@ -26,3 +29,4 @@ Questa guida spiega i passi minimi per iniziare.
 ```bash
 git clone https://github.com/tuo-utente/docs_test.git
 cd docs_test
+```
