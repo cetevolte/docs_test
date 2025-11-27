@@ -2,15 +2,72 @@ backend:
   name: git-gateway
   branch: main
 
+publish_mode: editorial_workflow
+
 media_folder: "uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "docs"
-    label: "Documentazione"
+  - name: "home"
+    label: "Home"
     files:
       - label: "Benvenuto"
         name: "benvenuto"
         file: "benvenuto.md"
         fields:
           - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Indice"
+        name: "indice"
+        file: "index.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "guide"
+    label: "Guide"
+    files:
+      - label: "Installazione"
+        name: "guida_installazione"
+        file: "guide/installazione.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Configurazione"
+        name: "guida_configurazione"
+        file: "guide/configurazione.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+      - label: "Prova"
+        name: "guida_prova"
+        file: "guide/prova.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "appendix"
+    label: "Appendici"
+    files:
+      - label: "Elenco"
+        name: "appendix_elenco"
+        file: "appendix/elenco.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "uat"
+    label: "UAT"
+    files:
+      - label: "UAT"
+        name: "uat"
+        file: "cartella/uat.md"
+        fields:
+          - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "workflow_demo"
+    label: "Workflow demo"
+    folder: "workflow_demo"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
